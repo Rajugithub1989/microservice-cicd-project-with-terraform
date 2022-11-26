@@ -8,7 +8,7 @@ variable "access_key" {
   default     = "AKIA2Q5WYMS4URC37CPB"
 }
 variable "secret_key" {
-  description = "AWS access key to launch servers."
+  description = "AWS secret key to launch servers."
   default     = "DiQCC5LuWpmqcK044Mij1kGkTgqTFl2+RbmKPytl"
 }
 variable "env" {
