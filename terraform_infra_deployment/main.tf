@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 0.12"
   # Uncomment only if you would like to use s3 as backend
   backend "s3" {
-    bucket = "terraform-demo-sandip"
+    bucket = "mp-aws-cicd-terraform-backend-bucket"
     key = "terraform.tfstate"
     region = "us-west-2"
   }
@@ -10,6 +10,8 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+  access_key = var.access_key
+  secret_key = var.secret_key
 }
 
 # data "aws_codecommit_repository" "nodeapp_repo" {

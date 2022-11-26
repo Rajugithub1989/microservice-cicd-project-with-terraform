@@ -3,6 +3,14 @@ variable "aws_region" {
   description = "AWS region to launch servers."
   default     = "us-west-2"
 }
+variable "access_key" {
+  description = "AWS access key to launch servers."
+  default     = "AKIA2Q5WYMS4URC37CPB"
+}
+variable "secret_key" {
+  description = "AWS access key to launch servers."
+  default     = "DiQCC5LuWpmqcK044Mij1kGkTgqTFl2+RbmKPytl"
+}
 variable "env" {
   description = "Targeted Depolyment environment"
   default     = "dev"
@@ -37,7 +45,7 @@ variable "golang_project_repository_branch" {
 
 variable "artifacts_bucket_name" {
   description = "S3 Bucket for storing artifacts"
-  default     = "your-project-name-cicd-artifacts-bucket"
+  default     = "mp-aws-cicd-artifacts-bucket"
 }
 
 variable "aws_ecs_cluster_name" {
